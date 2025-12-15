@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f7e0e0;
+}
+.header {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.container {
+  width: 85%;
+   margin: auto;
+   padding-top: 70px;
+  display: flex;
+  margin-bottom: 10px;
+
+}
+.left-content,.right-content{
+   flex-basis: 50%;
+}
+
+.left-content {
+   display: grid;
+   grid-gap:1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  background-color: #fbf0f0;
+  padding: 0 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-transform: capitalize;
+}
+
+.card-header {
+  display: flex;
+  align-items: center; 
+}
+
+.card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.btn-group {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-group button {
+  padding: 10px 20px;
+  background-color: #b74555;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.right-content{
+   width: 50%;
+   text-align: center;
+   color: black;
+   position: fixed;
+   top: 160px;
+  right: 10px;
+
+}
+
+.right-content h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.right-content img {
+  height: 200px;
+  margin: 1.5rem;
+}
+
+.abilities {
+  width: 70%;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 1rem;
+   text-transform: capitalize;
+}
+
+.abilities .group {
+  background-color: #b74555;
+   color: white;
+   padding: 0.5rem;
+   font-size: 12px;
+   border-radius: 8px;
+   margin-left: 1rem;
+}
+
+.base-stat {
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+
+.base-stat h3 {
+  font-size: 16px;
+  margin: 4px 0;
+}
